@@ -1,0 +1,15 @@
+// 通用样式
+.clearfix {
+    &::after {
+        content: '';
+        height: 0;
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        clear: both;
+    }
+}
+
+.hide {
+    display: none;
+}

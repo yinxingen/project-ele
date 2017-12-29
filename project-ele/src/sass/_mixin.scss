@@ -1,0 +1,6 @@
+// mixins
+
+@mixin border-radius($x:10px){
+    border-radius: $x;
+    -webkit-border-radius:$x;
+}

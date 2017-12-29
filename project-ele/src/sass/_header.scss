@@ -1,0 +1,117 @@
+/* header */
+
+.page-header {
+    height: 1.3rem;
+    background-image: -webkit-linear-gradient(left, #0af, #0085ff);
+    background-image: linear-gradient(90deg, #0af, #0085ff);
+    padding: 0.13rem 0.12rem;
+    color: #fff;
+    .page-header__address {
+        font-size: 0.18rem;
+        font-weight: normal;
+        display: flex;
+        justify-content: space-between;
+    }
+    .page-header__search-box {
+        height: 0.38rem;
+        position: relative;
+        margin: 0.11rem 0;
+        span {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            color: #333;
+            text-align: center;
+            line-height: 0.38rem;
+        }
+        input {
+            outline: none;
+            border: none;
+            background: #fff;
+            display: block;
+            width: 100%;
+            height: 100%;
+            @include border-radius(5px);
+        }
+    }
+    .page-header__search-show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: -webkit-linear-gradient(left, #0af, #0085ff);
+        background-image: linear-gradient(90deg, #0af, #0085ff);
+        height: 0.6rem;
+        margin: 0;
+        padding: 0.11rem 0.1rem;
+        z-index: 999;
+        span {
+            line-height: 0.6rem;
+        }
+    }
+    .page-header__hotsearch {
+        width: 100%;
+        .page-header__hotsearch--box {
+            width: 100%;
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        a {
+            color: #fff;
+            display: inline-block;
+            margin-right: 0.25rem;
+            font-size: 10px;
+        }
+    }
+}
+
+.nav {
+    height: 0.5rem;
+    padding: 0.05rem 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    a {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.2rem;
+        i {
+            font-size: 0.25rem;
+        }
+        span {
+            font-size: 0.1rem;
+        }
+    }
+    a.active {
+        color: $base-color;
+    }
+}
+
+.toTop {
+    width: 0.45rem;
+    height: 0.45rem;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0.7rem;
+    right: 0.2rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    i {
+        display: flex;
+        align-items: center;
+        font-size: 0.2rem;
+        color: #999;
+    }
+}
